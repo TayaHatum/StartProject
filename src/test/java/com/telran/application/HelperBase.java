@@ -66,6 +66,7 @@ public class HelperBase {
     public boolean isElementPresent(By locator) {
         return wd.findElements(locator).size()>0;
     }
+
     public void takeScreenshot(String pathToFile){
         File tmp = ((TakesScreenshot) wd).getScreenshotAs(OutputType.FILE);
         File screenshot = new
